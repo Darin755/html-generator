@@ -1,0 +1,30 @@
+#!/bin/bash
+path=$1
+index=$path/index.html
+rm $index
+echo "<!DOCTYPE html>" >> $index
+echo "<html>" >> $index
+echo "<head>" >> $index
+echo "<title>Files</title>" >> $index
+echo "</head>" >> $index 
+echo "<body>" >> $index
+echo "<h1>Files</h1>" >> $index
+#we populate index.html with files
+files=$(ls $path)
+files_array=($files)
+
+for i in ${files_array[@]}; do
+  if [ "$i" != "index.html" ]; then
+    echo $i
+    echo "<p></p>" >> $index
+    echo "<a href='$i'>$i</a>" >> $index
+  fi
+done
+
+echo "</body>" >> $index
+echo "</html>" >> $index
+
+
+echo done
+
+exit 0
