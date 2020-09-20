@@ -3,7 +3,7 @@ a script to generate a html page for files on a directory
 
 To use:
 
-./populate *path to directory*
+./populate *path-to-directory*
 
 Notes:
 Script must be outside the directory
