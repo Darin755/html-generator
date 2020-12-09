@@ -1,4 +1,5 @@
-#html-generator
+# html-generator
+
 a script to generate a html page for files on a directory
 
 To use:
