@@ -1,14 +1,13 @@
-# html-generator
+## html-generator
 
-a script to generate a html page for files on a directory
+ - a script to generate a html page for files in a directory
 
-To use:
+### To use:
 
-./populate *path-to-directory*
+ - run ``./populate *path-to-directory*`` outside the target directory
 
-Notes:
-Script must be outside the directory
+### Notes:
 
-the script will delete any index.html files in the directory and over write them with the new index.html
+ - the script will delete any index.html files in the directory and over write them with the new index.html
 
-the script is not recursive (i.e. you must run it once per folder)
+ - the script is not recursive (i.e. you must run it once per folder)
